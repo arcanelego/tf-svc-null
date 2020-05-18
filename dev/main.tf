@@ -1,10 +1,5 @@
 terraform {
   backend "http" {
-    address        = "http://localhost:1323/state/svc_null"
-    lock_address   = "http://localhost:1323/state/svc_null/lock"
-    unlock_address = "http://localhost:1323/state/svc_null/unlock"
-    lock_method    = "POST"
-    unlock_method  = "POST"
   }
 }
 
