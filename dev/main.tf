@@ -28,21 +28,21 @@ resource "stateful_map" "my_resource" {
 
 module "nullish" {
   # source    = "./modules/null"
-    source    = "git::http://gitea.ht.thetaylortorium.com/mt/tf_module_null.git"
+    source    = "git::http://github.com/arcanelego/tf-module-null"
 
   null_name = null_resource.test.id
 }
 
 module "nullish2" {
   # source    = "./modules/null"
-    source    = "git::http://gitea.ht.thetaylortorium.com/mt/tf_module_null.git"
+    source    = "git::http://github.com/arcanelego/tf-module-null"
 
   null_name = null_resource.test.id
 }
 
 
 module "nullish3" {
-  source    = "git::http://gitea.ht.thetaylortorium.com/mt/tf_module_null.git"
+  source    = "git::http://github.com/arcanelego/tf-module-null"
   null_name = null_resource.test.id
 }
 
